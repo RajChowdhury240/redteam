@@ -19,7 +19,7 @@ The order of preference is
 
 So if i try to access a file share and i mistyped the spelling as *fileshar*, which does not exist, we can see the windows machine sending requests using different protocols for name resolution.
 
-![t](/Images/1.png){:.shadow}
+![t](./Images/1.png){:.shadow}
 
 ### The Problem
 The problem with this protocol is that, it broadcasts the request to the entire intranet, meaning all the machines on the network would see this request, but there is no mechanism for the computer to verify the authenticity of the responses, as a result an attacker can spoof a response tricking the victim into trusting the malicious server, allowing attacker to steal the NTLM hash of the user.
